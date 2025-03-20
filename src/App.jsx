@@ -7,9 +7,9 @@ import './locomotive-scroll.css';
 import LocomotiveScroll from 'locomotive-scroll';
 import Logos from './Logos';
 import { useEffect, useRef, useState } from 'react';
-import sectionsText from './sectionsText';
 import { Testimonials } from './Testimonials';
 import FadingText from './FadingText';
+import { ServicesSection } from "./Services";
 
 function App() {
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -50,11 +50,7 @@ function App() {
                     <h1 data-scroll data-scroll-speed="2" onMouseEnter={textEnter} onMouseLeave={textLeave}>
                         Established in 2024 by an internationally award-winning marketing team, Sanguine provides consultancy to mission-led business leaders and charities, helping them to achieve their mission faster and easier.
                     </h1>
-                    <div data-scroll className="services-card-container">
-                        {
-                            sectionsText.map((sectionText, i) => <div key={`section-${i}}`} data-scroll className="services-card"><p>{sectionText.title}</p></div>)
-                        }
-                    </div>
+                    <ServicesSection />
                 </div>
                 <Testimonials />
 
