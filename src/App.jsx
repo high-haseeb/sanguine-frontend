@@ -42,18 +42,6 @@ function App() {
                 <div className="section-1">
                     <MyCanvas />
                     <div className="section-1-heading" >
-                        {/* <TypeAnimation
-                            sequence={[
-                                'We’re Sanguine.',
-                                1000,
-                                'A marketing agency committed to helping mission-led organisations keep the ball rolling.',
-                                5000,
-                            ]}
-                            wrapper="span"
-                            speed={50}
-                            style={{ fontSize: '2em', display: 'inline-block' }}
-                            repeat={1}
-                        /> */}
                         <FadingText />
                     </div>
                 </div>
